@@ -8,11 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="icon" type="image/png" href="atlas_logo_(symbol).png">
 
 <script>
-/* ══════════════════════════════════════════════════════════════
-   SITE CONFIG — edit everything here, nothing else needed
-   ══════════════════════════════════════════════════════════════ */
+/* ═════════════════════════════════════
+   SITE CONFIG — edit everything here
+   ═════════════════════════════════════ */
 const SITE_CONFIG = {
   company: {
     name:        "Atlas Industrial Systems",
@@ -20,7 +21,7 @@ const SITE_CONFIG = {
     tagline:     "Industrial Equipment Specialists",
     legalSuffix: "(Pty) Ltd",
     yearFounded: 2026,
-    vatNumber:   "",
+    //vatNumber:   "",
   },
   contact: {
     phones: [
@@ -65,31 +66,31 @@ const SITE_CONFIG = {
      Path to your PDF file, relative to the HTML file.
      e.g. "downloads/atlas-catalogue.pdf"
      Default points to the file in the same folder.            */
-  cataloguePdf: "HYNEE catalogue.pdf",
+  cataloguePdf: "HYNEE_catalogue.pdf",
   cataloguePdfLabel: "ATLAS Industrial Systems — Full Product Catalogue",
 
   hero: {
     eyebrow: "South Africa's Industrial Equipment Specialists",
     line1:   "Precision Equipment.",
     line2:   "Delivered.",
-    sub:     "Atlas Industrial Systems supplies world-class lifting and access equipment across South Africa — made to order, backed by full certification.",
+    sub:     "Atlas Industrial Systems supplies world-class lifting and access equipment across South Africa — made to order.",
   },
   stats: [
     { num: "11",    lbl: "Product Categories" },
-    { num: "50+",   lbl: "Models Available"   },
-    { num: "18m",   lbl: "Max Working Height" },
-    { num: "500kg", lbl: "Max Lift Capacity"  },
+    { num: "40+",   lbl: "Models Available"   },
+    { num: "16m",   lbl: "Max Platform Height" },
+    { num: "454kg", lbl: "Max Lift Capacity"  },
     { num: "SANS",  lbl: "OHS Compliant"      },
     { num: "MTO",   lbl: "Make to Order"      },
   ],
   trustBadges: [
-    { icon: "ti-certificate",    label: "ISO 9001:2015"      },
+    { icon: "ti-certificate",    label: "ISO 9001:2015 certified supplier"      },
     { icon: "ti-shield-check",   label: "CE Marked"          },
-    { icon: "ti-settings-2",     label: "Make to Order"      },
+    //{ icon: "ti-settings-2",     label: "Make to Order"      },
     { icon: "ti-truck-delivery", label: "Nationwide Delivery" },
-    { icon: "ti-zoom-check",     label: "EN 280 Compliant"   },
+    { icon: "ti-zoom-check",     label: "EN 280/SANS 10159 Compliant"   },
   ],
-  footerBadges: ["ISO 9001:2015", "CE Marked", "SANS Compliant", "EN 280"],
+  footerBadges: ["ISO 9001:2015", "CE Marked", "SANS Compliant", "EN 280/SANS 10159"],
   enquiryTypes: [
     "Product / Quote Request",
     "B2B Enquiry",
@@ -105,7 +106,7 @@ const SITE_CONFIG = {
     { icon: "ti-certificate",     name: "ISO 9001:2015",    body: "Quality Management System — consistent product quality on every unit manufactured.",                  tagType: "green",  tagLabel: "Certified" },
     { icon: "ti-shield-check",    name: "CE Marking",       body: "European conformity for the Machinery Directive — structural and electrical safety compliance.",       tagType: "green",  tagLabel: "Certified" },
     { icon: "ti-flag-3",          name: "SANS / OHS Act",   body: "Fully compliant with South African National Standards and the Occupational Health & Safety Act.",      tagType: "green",  tagLabel: "Compliant" },
-    { icon: "ti-zoom-check",      name: "EN 280",           body: "European standard for Mobile Elevating Work Platforms — design, safety and testing requirements.",      tagType: "green",  tagLabel: "Certified" },
+    { icon: "ti-zoom-check",      name: "EN 280/SANS 10159",           body: "European standard for Mobile Elevating Work Platforms — design, safety and testing requirements.",      tagType: "green",  tagLabel: "Certified" },
     { icon: "ti-leaf",            name: "RoHS Compliant",   body: "Restriction of hazardous substances in all electrical and electronic components.",                     tagType: "green",  tagLabel: "Compliant" },
     { icon: "ti-test-pipe",       name: "Factory FAT",      body: "Every unit undergoes a full Factory Acceptance Test before dispatch — 100% of units, no exceptions.",  tagType: "orange", tagLabel: "Standard"  },
     //{ icon: "ti-clipboard-check", name: "DoC Supplied",     body: "Declaration of Conformity and full CE documentation provided with every unit as standard.",            tagType: "green",  tagLabel: "Included"  },
@@ -118,7 +119,7 @@ const SITE_CONFIG = {
    ══════════════════════════════════════════════════════════════ */
 const CATEGORIES = [
   {
-    id: "smp1", icon: "ti-building-arch", code: "SMP1", color: "#12181f", price: 100000,
+    id: "smp1", icon: "ti-building-arch", code: "SMP1", color: "#12181f", price: 80000,
     title: "Single Mast — Swing Outrigger",
     shortDesc: "Lightweight aluminium single mast with swing outriggers. 1 person, push-around.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Platform Dim", "Overall Len", "Outrigger", "Weight (AC)"],
@@ -144,7 +145,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "smd", icon: "ti-steering-wheel", code: "SMD", color: "#0f1a22", price: 100000,
+    id: "smd", icon: "ti-steering-wheel", code: "SMD", color: "#0f1a22", price: 110000,
     title: "Single Mast — Self-Propelled",
     shortDesc: "Self-propelled aluminium single mast. Driven, zero turning radius, indoor/outdoor.",
     tableHeaders: ["Model", "Platform Ht (indoor)", "Platform Ht (outdoor)", "Capacity", "Occ.", "Overall Len", "Overall W", "Weight"],
@@ -154,7 +155,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "dmp1", icon: "ti-stack-2", code: "DMP1", color: "#1a1209", price: 100000,
+    id: "dmp1", icon: "ti-stack-2", code: "DMP1", color: "#1a1209", price: 120000,
     title: "Double Mast — Swing Outrigger",
     shortDesc: "Double aluminium mast with swing outriggers. 200kg capacity, up to 12m platform height.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Platform Dim", "Overall Len", "Outrigger", "Weight (AC)"],
@@ -167,7 +168,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "dmp2", icon: "ti-stack-2", code: "DMP2", color: "#1a0d1a", price: 100000,
+    id: "dmp2", icon: "ti-stack-2", code: "DMP2", color: "#1a0d1a", price: 130000,
     title: "Double Mast — Push-Around",
     shortDesc: "Advanced double mast push-around. 2-person platform, AC/DC powered, up to 16m platform height.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Platform Dim", "Overall Len", "Outrigger", "Weight (AC/DC)"],
@@ -181,7 +182,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "fmd", icon: "ti-lift", code: "FMD", color: "#0d1a35", price: 100000,
+    id: "fmd", icon: "ti-lift", code: "FMD", color: "#0d1a35", price: 120000,
     title: "Forklift Mast — Wheeled",
     shortDesc: "Heavy-duty self-propelled wheeled steel mast lifts with jib arm. Drivable at full height.",
     tableHeaders: ["Model", "Platform Ht", "Horiz. Reach", "Capacity", "Occ.", "Turret", "Jib", "Battery", "Weight"],
@@ -193,7 +194,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "cmd", icon: "ti-tank", code: "CMD", color: "#0a1f14", price: 100000,
+    id: "cmd", icon: "ti-tank", code: "CMD", color: "#0a1f14", price: 130000,
     title: "Forklift Mast — Tracked (Crawler)",
     shortDesc: "Tracked crawler forklift mast lifts with jib. For uneven terrain and construction sites.",
     tableHeaders: ["Model", "Platform Ht", "Horiz. Reach", "Capacity", "Occ.", "Turret", "Jib", "Track W", "Battery", "Weight"],
@@ -203,7 +204,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "tmd", icon: "ti-arrows-up", code: "TMD", color: "#0d2218", price: 100000,
+    id: "tmd", icon: "ti-arrows-up", code: "TMD", color: "#0d2218", price: 150000,
     title: "Telescopic Mast — Wheeled",
     shortDesc: "Self-propelled wheeled telescopic mast lifts. Compact, narrow-profile for tight indoor spaces.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Overall W", "Travel (stowed)", "Battery", "Weight"],
@@ -214,7 +215,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "ctd", icon: "ti-tank", code: "CTD", color: "#1a160a", price: 100000,
+    id: "ctd", icon: "ti-tank", code: "CTD", color: "#1a160a", price: 140000,
     title: "Telescopic Mast — Tracked (Crawler)",
     shortDesc: "Tracked crawler telescopic mast lift. Ultra-compact, zero-radius turn for restricted access.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Overall W", "Overall Len", "Track W", "Battery", "Weight"],
@@ -223,7 +224,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "x", icon: "ti-scissors", code: "X", color: "#0d1a1a", price: 100000,
+    id: "x", icon: "ti-scissors", code: "X", color: "#0d1a1a", price: 120000,
     title: "Scissor Lifts",
     shortDesc: "Mini scissor lifts — self-propelled, push-around, and all-electric/oil-free variants.",
     tableHeaders: ["Model", "Type", "Platform Ht", "Capacity", "Occ.", "Platform Dim", "Overall W", "Gradeability", "Weight"],
@@ -236,7 +237,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "ml", icon: "ti-package", code: "ML", color: "#1a0d0d", price: 100000,
+    id: "ml", icon: "ti-package", code: "ML", color: "#1a0d0d", price: 1250000,
     title: "Material Lifts",
     shortDesc: "Heavy and light duty manual fork-style material lifts. Stabiliser-supported, no power required.",
     tableHeaders: ["Model", "Duty", "Lift Ht (forks up)", "Load @0.36m", "Load @0.61m", "Load @1.07m", "Stab W", "Weight"],
@@ -756,7 +757,7 @@ footer { background:#050810; border-top:1px solid var(--border); padding:2.5rem 
      ══════════════════════════════════════════════════════════════ -->
 <nav>
   <a class="nav-logo" onclick="show('home')">
-    <img class="nav-logo-img" src="atlas-logo.png" alt="Atlas Industrial Systems"
+    <img class="nav-logo-img" src="atlas_logo.png" alt="Atlas Industrial Systems"
          onerror="this.style.display='none';document.getElementById('nav-text-logo').style.display='block'">
     <span class="nav-logo-text" id="nav-text-logo">ATLAS<span>.</span></span>
   </a>
@@ -803,7 +804,7 @@ footer { background:#050810; border-top:1px solid var(--border); padding:2.5rem 
     <div class="hero-grid"></div>
     <div class="hero-wash"></div>
     <div class="hero-triangle">
-      <img src="atlas-logo.png" alt=""
+      <img src="atlas_logo.png" alt=""
            style="width:100%;height:100%;object-fit:contain;opacity:0.12;filter:invert(1) brightness(2);">
     </div>
     <div class="hero-content">
@@ -847,7 +848,7 @@ footer { background:#050810; border-top:1px solid var(--border); padding:2.5rem 
       <div class="why-card"><i class="ti ti-shield-check why-icon"></i><div class="why-title">SANS / OHS</div><p class="why-desc">Meets South African National Standards and OHS Act requirements.</p></div>
       <div class="why-card"><i class="ti ti-zoom-check why-icon"></i><div class="why-title">CE Marked</div><p class="why-desc">European certification for structural and electrical safety compliance.</p></div>
       <div class="why-card"><i class="ti ti-truck-delivery why-icon"></i><div class="why-title">Nationwide</div><p class="why-desc">Delivered and commissioned across all 9 provinces.</p></div>
-      <div class="why-card"><i class="ti ti-certificate why-icon"></i><div class="why-title">Fully Certified</div><p class="why-desc">ISO 9001:2015, CE marked, EN 280 — full documentation available.</p></div>
+      <div class="why-card"><i class="ti ti-certificate why-icon"></i><div class="why-title">Fully Certified</div><p class="why-desc">ISO 9001:2015, CE marked, EN 280/SANS 10159 — full documentation available.</p></div>
       <div class="why-card"><i class="ti ti-building-factory-2 why-icon"></i><div class="why-title">Growing Range</div><p class="why-desc">MEWPs are our first line. More industrial categories being added.</p></div>
     </div>
   </div>
@@ -945,7 +946,7 @@ footer { background:#050810; border-top:1px solid var(--border); padding:2.5rem 
           <li><span class="arr-o">→</span> Pre-delivery inspection and commissioning</li>
           <li><span class="arr-o">→</span> Delivery throughout South Africa</li>
           <li><span class="arr-o">→</span> 1-year manufacturer warranty on all units</li>
-          <li><span class="arr-o">→</span> Full certification documentation supplied</li>
+          <li><span class="arr-o">→</span> Full certification documentation available</li>
           <!-- <li><span class="arr-o">→</span> Financing options available via our partners</li> -->
         </ul>
         <a class="btn btn-outline-orange" onclick="show('contact')"><i class="ti ti-shopping-cart"></i> Submit Enquiry</a>
@@ -1033,7 +1034,7 @@ function footerHTML() {
   return `
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="fl"><img src="atlas-logo.png" alt="Atlas" style="height:118px; width:auto; vertical-align:middle;"></div>
+        <div class="fl"><img src="atlas_logo.png" alt="Atlas" style="height:118px; width:auto; vertical-align:middle;"></div>
         <div class="ft">${C.company.name} ${C.company.legalSuffix}</div>
         <p>South Africa's industrial equipment specialists. Made to order, delivered nationwide.</p>
       </div>
@@ -1135,7 +1136,7 @@ el('acc-list').innerHTML = CATEGORIES.map((cat, i) => {
           <div class="acc-title-desc">${cat.shortDesc}</div>
         </div>
         <div class="acc-right">
-          <span class="acc-price"><i class="ti ti-tag" style="font-size:10px;margin-right:4px;"></i>${cat.price > 0 ? 'Priced from: R ' + cat.price.toLocaleString() : 'Priced on enquiry'}</span>
+          <span class="acc-price"><i class="ti ti-tag" style="font-size:10px;margin-right:4px;"></i>${cat.price > 0 ? 'Priced from: ZAR ' + cat.price.toLocaleString() : 'Priced on enquiry'}</span>
           <span class="acc-arrow"><i class="ti ti-chevron-down"></i></span>
         </div>
       </div>
