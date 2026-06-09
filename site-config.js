@@ -90,7 +90,7 @@ const SITE_CONFIG = {
 
 const CATEGORIES = [
   {
-    id: "smp1", icon: "ti-building-arch", code: "SMP1", color: "#12181f", price: 28000,
+    id: "smp1", icon: "ti-building-arch", code: "SMP1", color: "#12181f", price: 51000,
     title: "Single Mast — Swing Outrigger",
     shortDesc: "Lightweight aluminium single mast with swing outriggers. 1 person, push-around.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Platform Dim", "Overall Len", "Outrigger", "Weight (AC)"],
@@ -102,7 +102,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "smp2", icon: "ti-building-arch", code: "SMP2", color: "#151a12", price: 62000,
+    id: "smp2", icon: "ti-building-arch", code: "SMP2", color: "#151a12", price: 90000,
     title: "Single Mast — Push-Around",
     shortDesc: "Advanced single mast aluminium lifts. AC/DC powered, outrigger-stabilised. Up to 12m platform height.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Platform Dim", "Overall Len", "Outrigger", "Weight (AC/DC)"],
@@ -116,7 +116,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "smd", icon: "ti-steering-wheel", code: "SMD", color: "#0f1a22", price: 143000,
+    id: "smd", icon: "ti-steering-wheel", code: "SMD", color: "#0f1a22", price: 182000,
     title: "Single Mast — Self-Propelled",
     shortDesc: "Self-propelled aluminium single mast. Driven, zero turning radius, indoor/outdoor.",
     tableHeaders: ["Model", "Platform Ht (indoor)", "Platform Ht (outdoor)", "Capacity", "Occ.", "Overall Len", "Overall W", "Weight"],
@@ -126,7 +126,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "dmp1", icon: "ti-stack-2", code: "DMP1", color: "#1a1209", price: 56000,
+    id: "dmp1", icon: "ti-stack-2", code: "DMP1", color: "#1a1209", price: 83000,
     title: "Double Mast — Swing Outrigger",
     shortDesc: "Double aluminium mast with swing outriggers. 200kg capacity, up to 12m platform height.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Platform Dim", "Overall Len", "Outrigger", "Weight (AC)"],
@@ -139,7 +139,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "dmp2", icon: "ti-stack-2", code: "DMP2", color: "#1a0d1a", price: 95000,
+    id: "dmp2", icon: "ti-stack-2", code: "DMP2", color: "#1a0d1a", price: 127000,
     title: "Double Mast — Push-Around",
     shortDesc: "Advanced double mast push-around. 2-person platform, AC/DC powered, up to 16m platform height.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Platform Dim", "Overall Len", "Outrigger", "Weight (AC/DC)"],
@@ -153,7 +153,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "fmd", icon: "ti-lift", code: "FMD", color: "#0d1a35", price: 326000,
+    id: "fmd", icon: "ti-lift", code: "FMD", color: "#0d1a35", price: 392000,
     title: "Forklift Mast — Wheeled",
     shortDesc: "Heavy-duty self-propelled wheeled steel mast lifts with jib arm. Drivable at full height.",
     tableHeaders: ["Model", "Platform Ht", "Horiz. Reach", "Capacity", "Occ.", "Turret", "Jib", "Battery", "Weight"],
@@ -165,7 +165,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "cmd", icon: "ti-tank", code: "CMD", color: "#0a1f14", price: 367000,
+    id: "cmd", icon: "ti-tank", code: "CMD", color: "#0a1f14", price: 439000,
     title: "Forklift Mast — Tracked (Crawler)",
     shortDesc: "Tracked crawler forklift mast lifts with jib. For uneven terrain and construction sites.",
     tableHeaders: ["Model", "Platform Ht", "Horiz. Reach", "Capacity", "Occ.", "Turret", "Jib", "Track W", "Battery", "Weight"],
@@ -175,7 +175,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "tmd", icon: "ti-arrows-up", code: "TMD", color: "#0d2218", price: 127000,
+    id: "tmd", icon: "ti-arrows-up", code: "TMD", color: "#0d2218", price: 164000,
     title: "Telescopic Mast — Wheeled",
     shortDesc: "Self-propelled wheeled telescopic mast lifts. Compact, narrow-profile for tight indoor spaces.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Overall W", "Travel (stowed)", "Battery", "Weight"],
@@ -186,7 +186,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "ctd", icon: "ti-tank", code: "CTD", color: "#1a160a", price: 137000,
+    id: "ctd", icon: "ti-tank", code: "CTD", color: "#1a160a", price: 175000,
     title: "Telescopic Mast — Tracked (Crawler)",
     shortDesc: "Tracked crawler telescopic mast lift. Ultra-compact, zero-radius turn for restricted access.",
     tableHeaders: ["Model", "Platform Ht", "Capacity", "Occ.", "Overall W", "Overall Len", "Track W", "Battery", "Weight"],
@@ -195,7 +195,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "x", icon: "ti-scissors", code: "X", color: "#0d1a1a", price: 39000,
+    id: "x", icon: "ti-scissors", code: "X", color: "#0d1a1a", price: 64000,
     title: "Scissor Lifts",
     shortDesc: "Mini scissor lifts — self-propelled, push-around, and all-electric/oil-free variants.",
     tableHeaders: ["Model", "Type", "Platform Ht", "Capacity", "Occ.", "Platform Dim", "Overall W", "Gradeability", "Weight"],
@@ -208,7 +208,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "ml", icon: "ti-package", code: "ML", color: "#1a0d0d", price: 25000,
+    id: "ml", icon: "ti-package", code: "ML", color: "#1a0d0d", price: 47000,
     title: "Material Lifts",
     shortDesc: "Heavy and light duty manual fork-style material lifts. Stabiliser-supported, no power required.",
     tableHeaders: ["Model", "Duty", "Lift Ht (forks up)", "Load @0.36m", "Load @0.61m", "Load @1.07m", "Stab W", "Weight"],
